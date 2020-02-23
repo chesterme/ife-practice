@@ -1,0 +1,159 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    box-sizing: border-box;
+}
+
+ul{
+    list-style: none;
+}
+
+.main{
+    background-image: url(../imgs/bg.png);
+    background-repeat: repeat;
+}
+
+.left-aside{
+    width: 30%;
+    float: left;
+}
+
+.right-aside{
+    width: 65%;
+    padding-left: 5%;
+    float: right;
+    background-color: white;
+}
+
+.profile-picture-container{
+    height: 200px;
+    width: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.profile-picture{
+    width: 100px;
+    height: 100px;
+    border: 2px solid white;
+    background-image: url(../imgs/profile-picture.jpg);
+    background-size: 100px 100px;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-clip: content-box;
+}
+
+
+.title{
+    color: white;
+    background-image: url(../imgs/bg-1.png);
+    background-repeat: repeat;
+    text-align: center;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+.item-list p{
+    padding-left: 20%;
+    line-height: 40px;
+    background-repeat: no-repeat;
+    background-position: 10% 50%; 
+}
+
+.nation p{
+    background-image: url(../imgs/person.svg);
+}
+
+
+.birthday p{
+    background-image: url(../imgs/date.svg);
+}
+
+.identify p{
+    background-image: url(../imgs/identify.svg);
+}
+
+.address p{
+    background-image: url(../imgs/address.svg);
+}
+
+.phone p {
+    background-image: url(../imgs/phone.svg);
+}
+
+.email p{
+    background-image: url(../imgs/email.svg);
+}
+
+.content{
+    margin-bottom: 50px;
+}
+
+.sub-title{
+    font-size: 1.25rem;
+}
+
+.sub-item p{
+    line-height: 30px;
+    padding-left: 10%;
+}
+
+.right-content-container{
+    margin-bottom: 2rem;
+}
+
+.right-title{
+    margin-bottom: 1rem;
+}
+
+.right-title h3{
+    background-repeat: no-repeat;
+    background-position: 0% 50%;
+    border-bottom: 2px solid blue;
+    padding: 1rem 0;
+    color: blue;
+    padding-left: 60px;
+}
+
+.education h3{
+    background-image: url(../imgs/university.svg);
+}
+
+.fieldwork h3{
+    background-image: url(../imgs/fieldwork.svg);
+}
+
+.skill h3{
+    background-image: url(../imgs/skill.svg);
+}
+
+.self-comment h3{
+    background-image: url(../imgs/comment.svg);
+}
+
+.date-list-container{
+    margin-bottom: 1rem;
+}
+
+.date-list{
+    display: flex;
+    color: blue;
+    margin-bottom: .5rem;
+}
+
+.date-list li{
+    flex: 1;
+}
+
+.detail p{
+    line-height: 1.5rem;
+}
+.clear::after{
+    content: "";
+    clear: both;
+    display: block;
+}
