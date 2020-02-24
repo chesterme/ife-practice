@@ -1,5 +1,5 @@
 ---
-typora-root-url: ./
+typora-root-url: ..\..
 ---
 
 ## css介绍
@@ -17,7 +17,7 @@ CSS（层叠样式表）用于设置和布置网页 。html用于表示页面的
 5. 上述的规则应用于渲染树之后，渲染树会依照应该出现的结构进行布局。
 6. 网页展示在屏幕上（这一步被称为着色）。
 
-![rendering](/images/rendering.svg)
+![rendering](/day03/note/images/rendering.svg)
 
 ## css语法
 
@@ -348,7 +348,7 @@ p{
 }
 ```
 
-![1582513028727](.\images\1582513028727.png)
+![1582513028727](/day03/note/images/1582513028727.png)
 
 它不能控制自定义项目符号的位置，更加有效的方式是使用`background-image`，例如：
 
@@ -363,4 +363,5 @@ p{
 }
 ```
 
-![1582513378697](/images/1582513378697.png)
+![1582513378697](/day03/note/images/1582513378697.png)
+
