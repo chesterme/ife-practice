@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>使用背景尺寸</title>
+    <style>
+        .container{
+            border: 1px solid black;
+            padding: 0.25rem;
+        }
+        .clearfix::after{
+            content: "";
+            display: block;
+            clear: both;
+        }
+        .sub-container{
+            width: 400px;
+            height: 400px;
+            background-color: aqua;
+            border: 1px solid black;
+            padding: 0.25rem;
+            margin: 0.5rem;
+            background-image: url("./images/eagle.jpg");
+            background-repeat: no-repeat;
+            float: left;
+        }
+        .contain{
+            background-size: contain;
+        }
+        .cover{
+            background-size: cover;
+        }
+        .width{
+            background-size: 120px auto;
+        }
+        .width-height{
+            background-size: 120px 200px;
+        }
+        .reduce{
+            background-size: 50%;
+        }
+    </style>
+</head>
+<body>
+    <div class="container clearfix">
+        <div class="sub-container contain"></div>
+        <div class="sub-container cover"></div>
+        <div class="sub-container width"></div>
+        <div class="sub-container width-height"></div>
+        <div class="sub-container reduce"></div>
+    </div>
+</body>
+</html>

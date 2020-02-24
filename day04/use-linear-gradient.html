@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>使用线性渐变</title>
+    <style>
+        .container{
+            width: 200px;
+            height: 200px;
+            margin-top: 1rem;
+        }
+        .gradient{
+            background: linear-gradient(to right, white, black);
+        }
+        .gradient-1{
+            background:linear-gradient(to right, red, green 50%, blue);
+        }
+        .gradient-2{
+            background:linear-gradient(#64d1dd, #fff 25%, #64d1dd 50%, #fff 75%,#64d1dd);
+        }
+    </style>
+</head>
+<body>
+    <div class="container gradient"></div>
+    <div class="container gradient-1"></div>
+    <div class="container gradient-2"></div>
+</body>
+</html>

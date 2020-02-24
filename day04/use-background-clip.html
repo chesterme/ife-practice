@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>背景是否延申到边框下</title>
+    <style>
+        .container{
+            border: 1px solid black;
+            padding: 0.25rem;
+            margin: 0.5rem;
+        }
+        .left{
+            float: left;
+        }
+        .clearfix::after{
+            content: "";
+            display: block;
+            clear: both;
+        }
+        .output{
+            background-color: aqua;
+            padding: 1rem;
+            border: 5px dotted black;
+            background-image: url("./images/lizard.png");
+            margin: 1rem;
+        }
+        .output p{
+            font-size: 2rem;
+            color: white;
+        }
+        .border-box{
+            background-clip: border-box;
+        }
+        .padding-box{
+            background-clip: padding-box;
+        }
+        .content-box{
+            background-clip: content-box;
+        }
+        .text{
+            background-clip: text;
+        }
+    </style>
+</head>
+<body>
+    <div class="container clearfix">
+        <div class="output left border-box">
+            <p>This is the content of the element.</p>
+        </div>
+        <div class="output left padding-box">
+            <p>This is the content of the element.</p>
+        </div>
+        <div class="output left content-box">
+            <p>This is the content of the element.</p>
+        </div>
+        <div class="output left text">
+            <p>This is the content of the element.</p>
+        </div>
+    </div>
+</body>
+</html>

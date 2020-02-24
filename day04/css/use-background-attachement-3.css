@@ -1,0 +1,95 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    box-sizing: border-box;
+}
+
+.main{
+    background-image: url(../images/bg-2.PNG);
+    background-repeat: repeat;
+}
+
+.left-aside{
+    width: 30%;
+    float: left;
+}
+
+.right-aside{
+    width: 65%;
+    padding-left: 5%;
+    float: right;
+    background: url(../images/bg.png) repeat;
+}
+
+.clearfix::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.logo{
+    background-image: url(../images/google-logo.svg);
+    background-repeat: no-repeat;
+    background-position: 0% 0%;
+    background-attachment: fixed;
+    height: 300px;
+    border: 1px solid black;
+}
+
+.title{
+    text-align: center;
+    margin-bottom: 1rem;
+    border-bottom: 1px solid black;
+}
+
+.title h2{
+    font-size: 4rem;
+    line-height: 5rem;
+    margin-bottom: 1rem;
+}
+
+.sub-heading{
+    margin-bottom: 1rem;
+}
+
+.middle{
+    font-size: 1.5rem;
+}
+
+.small{
+    font-size: 1rem;
+}
+
+@font-face{
+    font-family: 'NotoSansSC';
+    src: url("../fonts/Noto_Sans_SC/NotoSansSC-Black.otf") format("otf"),
+        url("../fonts/Noto_Sans_SC/NotoSansSC-Bold.otf") format("otf"),
+        url("../fonts/Noto_Sans_SC/NotoSansSC-Light.otf") format("otf"),
+        url("../fonts/Noto_Sans_SC/NotoSansSC-Medium.otf") format("otf"),
+        url("../fonts/Noto_Sans_SC/NotoSansSC-Regular.otf") format("otf");
+}
+
+.article{
+    margin-bottom: 2rem;
+}
+
+.sub-title{
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.sub-title h3{
+    font-family: "NotoSansSC", Georgia, serif;
+}
+
+.detail{
+    word-spacing: 2px;
+    line-height: 1.5rem;
+}
+
+.detail span{
+    font-weight: bold;
+}

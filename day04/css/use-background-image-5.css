@@ -1,0 +1,81 @@
+.container{
+    border: 1px solid black;
+    padding: 1px;
+    width: 400px;
+    height: 400px;
+    margin-bottom: 1rem;
+    text-align: center;
+    color: white;
+    text-transform: uppercase;
+}
+
+
+.linear-1{
+    background-image: linear-gradient(to right, black, white);
+}
+
+@font-face{
+    font-family: "Lacquer";
+    src: url("../fonts/Lacquer/Lacquer-Regular.ttf") format("ttf");
+}
+
+@font-face{
+    font-family: "NotoSansSC-Black";
+    src: url("../fonts/Noto_Sans_SC/NotoSansSC-Bold.otf") format("otf");
+}
+
+.top{
+    font-family: 'Lacquer';
+    font-size: 3rem;
+}
+
+.bottom{
+    font-family: 'NotoSansSC-Black';
+    font-size: 3rem;
+}
+
+.linear-2{
+    background-image: linear-gradient(to right, #900 0%, #fc0 10%, #fc0 20%, green 60%, green 70%, blue);
+}
+
+.linear-3{
+    background-image: repeating-linear-gradient(45deg, #900 20px, #fc0 30px, #900 40px);
+}
+
+.radial-1{
+    width: 400px;
+    height: 300px;
+    background-image: radial-gradient(red, blue);
+}
+
+.radial-2{
+    width: 400px;
+    height: 300px;
+    background-image: radial-gradient(circle, red, blue);
+}
+
+.radial-3{
+    width: 400px;
+    height: 300px;
+    background-image: radial-gradient(circle at 20% 40%, red, blue);
+}
+
+.radial-4{
+    background-image: radial-gradient(closest-side circle at 20% 40%, red, blue);
+}
+
+.radial-5{
+    background-image: radial-gradient(farthest-side circle at 20% 40%, red, blue);
+}
+
+.radial-6{
+    background-image: radial-gradient(closest-corner circle at 20% 40%, red, blue);
+}
+
+.radial-7{
+    background-image: radial-gradient(farthest-corner circle at 20% 40%, red, blue);
+}
+
+.radial-8{
+    background-image: repeating-radial-gradient(circle, red 20px, orange 30px, yellow 40px, red 50px);
+}
