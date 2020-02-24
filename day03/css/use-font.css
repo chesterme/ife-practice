@@ -1,0 +1,8 @@
+@font-face{
+    font-family: "myFont";
+    src: url(../fonts/ZhiMangXing-Regular.ttf);
+}
+
+.main p{
+    font-family: "myFont", "Bitstream Vera Serif", serif;
+}

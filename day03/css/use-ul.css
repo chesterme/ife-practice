@@ -1,0 +1,36 @@
+.decimal{
+    list-style-type: decimal;
+    list-style-position: outside;
+    list-style-image: url(../imgs/balloon.svg);
+}
+
+.decimal-leading-zero{
+    list-style-type: decimal-leading-zero;
+    list-style-position: inside;
+    list-style-image: url(../imgs/balloon.svg);
+}
+
+.upper-alpha{
+    list-style-type: upper-alpha;
+}
+
+.lower-alpha{
+    list-style-type: lower-alpha;
+}
+
+.upper-roman{
+    list-style-type: upper-roman;
+}
+
+.lower-roman{
+    list-style-type: lower-roman;
+}
+
+.item-icon li{
+    list-style: none;
+    background-image: url(../imgs/balloon.svg);
+    background-repeat: no-repeat;
+    background-position: 0% 50%;
+    padding-left: 25px;
+    line-height: 30px;
+}
