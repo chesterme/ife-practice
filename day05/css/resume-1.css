@@ -1,0 +1,65 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    box-sizing: border-box;
+}
+
+.main{
+    display: flex;
+}
+
+.left-aside{
+    flex: 1;
+    background: url(../imgs/bg-1.PNG) repeat;
+}
+
+.right-aside{
+    flex: 4;
+    padding-left: 1rem;
+    background: url(../imgs/bg-2.PNG) repeat;
+}
+
+.logo{
+    color: white;
+    text-align: center;
+    font-size: 2rem;
+    padding-top: 2rem;
+}
+
+.message{
+    padding-top: 2rem;
+    /* margin-bottom: 1.5rem; */
+}
+
+.title{
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    line-height: 2rem;
+}
+
+.key-value-container{
+    display: flex;
+}
+
+.key-value{
+    flex: 1;
+    margin-bottom: 1rem;
+    display: flex;
+}
+
+.key{
+    flex: 1;
+    font-weight: bold;
+}
+
+.value{
+    flex: 4;
+}
+
+.other-key-value{
+    display: block;
+}
+

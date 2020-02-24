@@ -1,0 +1,74 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    box-sizing: border-box;
+}
+
+.header{
+    background: url(../imgs/bg-3.PNG) repeat;
+}
+
+.logo{
+    color: white;
+    font-size: 2rem;
+    padding: 2rem;
+}
+
+.message{
+    display: flex;
+    margin-bottom: 1rem;
+}
+
+.title{
+    flex: 1;
+    background: url(../imgs/bg-4.PNG) repeat;
+    min-height: 100px;
+}
+
+.key-value-container, .other-key-value-container{
+    flex: 6;
+    margin-left: 1rem;
+    padding: 1rem;
+    box-shadow: 2px 3px 10px black; /*阴影在右下方*/
+}
+
+.key, .other-key{
+    font-weight: bold;
+}
+
+.display-center{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.key-value, .other-key-value{
+    margin-bottom: 1rem;
+    line-height: 1.5rem;
+}
+
+.key{
+    float: left;
+}
+
+.value{
+    float: left;
+    margin-left: 1rem;
+}
+
+.clearfix::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.key-value{
+    float: left;
+}
+
+.key-value:nth-of-type(n+2){
+    margin-left: 1.5rem;
+}

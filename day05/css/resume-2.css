@@ -1,0 +1,75 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    box-sizing: border-box;
+}
+
+.clearfix::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.main{
+    display: flex;
+}
+
+.left-aside{
+    flex: 1;
+    background: url(../imgs/bg-1.PNG) repeat;
+}
+
+.right-aside{
+    flex: 4;
+    padding-left: 1rem;
+    background: url(../imgs/bg-2.PNG) repeat;
+}
+
+.logo{
+    color: white;
+    text-align: center;
+    font-size: 2rem;
+    padding-top: 2rem;
+}
+
+.message{
+    padding-top: 2rem;
+}
+
+.title{
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    line-height: 2rem;
+}
+
+.key-value{
+    float: left;
+    /* display: inline-block; */
+}
+
+.key-value:nth-of-type(n+2){
+    padding-left: 1.5rem;
+}
+
+.key{
+    float: left;
+}
+
+
+.value{
+    float: left;
+    padding-left: .5rem;
+}
+
+.other-key-value{
+    margin-bottom: 1rem;
+}
+
+.other-key{
+    font-weight: bold;
+}
+
+
