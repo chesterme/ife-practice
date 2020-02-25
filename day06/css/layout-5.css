@@ -1,0 +1,29 @@
+.wrapper {
+    padding: 15px 20px;
+    border: 1px dashed #ff6c60;
+}
+.left {
+    width: 120px;
+    border: 5px solid #ddd;
+}
+.right {
+    margin-left: 20px;
+    border: 5px solid #ddd;
+}
+
+.wrapper-float-bfc::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.wrapper-float-bfc .left {
+    float: left;
+    margin-right: 20px;
+}
+
+.wrapper-float-bfc .right {
+    margin-left: 0;
+    /* 强制让右侧栏围绕左侧栏 */
+    overflow: auto;
+}

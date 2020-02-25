@@ -1,0 +1,32 @@
+.wrapper {
+    padding: 15px 20px;
+    border: 1px dashed #ff6c60;
+}
+.left {
+    width: 120px;
+    border: 5px solid #ddd;
+}
+.right {
+    margin-left: 20px;
+    border: 5px solid #ddd;
+}
+
+.wrapper-inline-block {
+    box-sizing: content-box;
+    /* 消除空格的影响 */
+    font-size: 0; 
+}
+
+.wrapper-inline-block .left,
+.wrapper-inline-block .right {
+    display: inline-block;
+    /* 设置行内元素的在一行内的对齐方式 */
+    vertical-align: top;    
+    font-size: 14px;
+    box-sizing: border-box;
+}
+
+.wrapper-inline-block .right {
+    /* 在声明 CSS 属性值时执行一些计算 */
+    width: calc(100% - 140px);
+}

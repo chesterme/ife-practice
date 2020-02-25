@@ -1,0 +1,31 @@
+.wrapper {
+    padding: 15px 20px;
+    border: 1px dashed #ff6c60;
+}
+.left {
+    width: 120px;
+    border: 5px solid #ddd;
+}
+.right {
+    margin-left: 20px;
+    border: 5px solid #ddd;
+}
+
+.wrapper-grid {
+    display: grid;
+    grid-template-columns: 120px 1fr;
+    align-items: start;
+}
+
+.wrapper-grid .left,
+.wrapper-grid .right {
+    box-sizing: border-box;
+}
+
+.wrapper-grid .left {
+    grid-column: 1;
+}
+
+.wrapper-grid .right {
+    grid-column: 2;
+}

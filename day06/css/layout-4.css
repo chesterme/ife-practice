@@ -1,0 +1,20 @@
+.wrapper {
+    padding: 15px 20px;
+    border: 1px dashed #ff6c60;
+}
+.left {
+    width: 120px;
+    border: 5px solid #ddd;
+}
+.right {
+    margin-left: 20px;
+    border: 5px solid #ddd;
+}
+
+.wrapper-absolute .left {
+    position: absolute;
+}
+
+.wrapper-absolute .right {
+    margin-left: 150px;
+}

@@ -1,0 +1,39 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    box-sizing: border-box;
+}
+
+ul{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+.header{
+    background: url(../images/bg-1.PNG) repeat;
+}
+
+.navigation li{
+    display: inline-block;
+    line-height: 2rem;
+    padding: 1rem;
+}
+
+.navigation li a{
+    color: white;
+    position: relative;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+}
+
+.navigation li a img{
+    position: absolute;
+    top: 10px;
+    padding-left: 5px;
+}
