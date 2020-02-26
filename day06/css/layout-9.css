@@ -1,0 +1,36 @@
+.box{
+    padding: .5rem;
+    border: 1px solid black;
+    box-shadow: 2px 2px 5px black;
+}
+
+.display-center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header{
+    background-color: aqua;
+    color: white;
+}
+
+.main{
+    display: grid;
+    color: white;
+    /*该布局一共有三列，它的的宽度分别是：200px、剩余的宽度、200px*/
+    grid-template-columns: 200px 1fr 200px;
+    grid-template-rows: auto;
+}
+
+.left{
+    background-color: brown;
+}
+
+.center{
+    background-color: purple;
+}
+
+.right{
+    background-color: orange;
+}

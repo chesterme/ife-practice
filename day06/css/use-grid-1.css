@@ -1,0 +1,187 @@
+.box{
+    border: 1px solid black;
+    box-shadow: 2px 2px 5px black;
+    padding: .5rem;
+    text-align: center;
+}
+
+.display-center{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.wrapper {
+    display: grid;
+    margin-bottom: 1rem;
+}
+
+.wrapper-1{
+    grid-template-columns: [第一条纵线] 200px [第二条纵线] 1fr [第三条纵线] 200px [最后一条纵线];
+    grid-template-rows: 100px auto 100px;
+}
+
+.wrapper-2{
+    grid-template-columns: repeat(24, 40px 50px 60px);
+}
+
+.wrapper-3{
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.wrapper-4{
+    grid-template-columns: 1fr 2fr 3fr;
+}
+
+.wrapper-5{
+    grid-template-columns: auto 1fr 2fr;
+}
+
+.wrapper-6{
+    grid-template-columns: auto .25fr .25fr .25fr;
+}
+
+.wrapper-7{
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-areas: 
+        "葡萄 葡萄 葡萄"
+        "龙虾 养鱼 养鱼"
+        "龙虾 养鱼 养鱼"
+        "西瓜 西瓜 西瓜";
+}
+
+.grape{
+    grid-area: 葡萄;
+}
+
+.lobster{
+    grid-area: 龙虾;
+}
+
+.fish{
+    grid-area: 养鱼;
+}
+
+.watermelon{
+    grid-area: 西瓜;
+}
+
+.wrapper-8{
+    grid-template: 
+        "葡萄 葡萄 葡萄" 1fr
+        "龙虾 养鱼 养鱼" 1fr
+        "龙虾 养鱼 养鱼" 1fr
+        "西瓜 西瓜 西瓜" 1fr
+        / 1fr 1fr 1fr;
+}
+
+.wrapper-9{
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-column-gap: 5px;
+    grid-row-gap: 10px;
+}
+
+.wrapper-10{
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-gap: 10px 5px;
+}
+
+.wrapper-11{
+    grid-template: 1fr 1fr / 1fr 1fr;
+    justify-items: stretch;
+}
+
+.wrapper-12{
+    grid-template: 1fr 1fr / 1fr 1fr;
+    justify-items: start;
+}
+
+.wrapper-13{
+    grid-template: 1fr 1fr / 1fr 1fr;
+    justify-items: center;
+}
+
+.wrapper-14{
+    grid-template: 1fr 1fr / 1fr 1fr;
+    justify-items: end;
+}
+
+.wrapper-15{
+    grid-template: 1fr 1fr / 1fr 1fr;
+    align-items: stretch;
+}
+
+.wrapper-16{
+    grid-template: 1fr 1fr / 1fr 1fr;
+    align-items: start;
+}
+
+.wrapper-17{
+    grid-template: 1fr 1fr / 1fr 1fr;
+    align-items: center;
+}
+
+.wrapper-18{
+    grid-template: 1fr 1fr / 1fr 1fr;
+    align-items: end;
+}
+
+.wrapper-19{
+    grid-template: 1fr 1fr / 1fr 1fr;
+    /* justify-items: center;
+    align-items: center; */
+    place-items: center center;
+}
+
+.wrapper-20{
+    width: 600px;
+    /* grid-template: 250px 300px / 250px 300px; */
+    grid-template: auto auto / auto auto;
+    justify-content: stretch;
+}
+
+.wrapper-21{
+    width: 600px;
+    grid-template: 250px 300px / 250px 300px;
+    /* grid-template: auto auto / auto auto; */
+    justify-content: start;
+}
+
+
+.wrapper-22{
+    width: 600px;
+    grid-template: 250px 300px / 250px 300px;
+    /* grid-template: auto auto / auto auto; */
+    justify-content: center;
+}
+
+.wrapper-23{
+    width: 600px;
+    grid-template: 250px 300px / 250px 300px;
+    /* grid-template: auto auto / auto auto; */
+    justify-content: end;
+}
+
+.wrapper-24{
+    width: 600px;
+    grid-template: 250px 300px / 250px 300px;
+    /* grid-template: auto auto / auto auto; */
+    justify-content: space-between;
+}
+
+.wrapper-25{
+    width: 600px;
+    grid-template: 250px 300px / 250px 300px;
+    /* grid-template: auto auto / auto auto; */
+    justify-content: space-around;
+}
+
+.wrapper-26{
+    width: 600px;
+    grid-template: 250px 300px / 250px 300px;
+    /* grid-template: auto auto / auto auto; */
+    justify-content: space-evenly;
+}

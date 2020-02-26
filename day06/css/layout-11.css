@@ -1,0 +1,60 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+html, body, .main{
+    height: 100%;
+}
+
+.box{
+    padding: .5rem;
+    border: 1px solid black;
+    box-shadow: 2px 2px 5px black;
+    background-clip: padding-box;
+    color: white;
+}
+
+.header, .footer{
+    background-color: aqua;
+    color: white;
+    height: 200px;
+    box-sizing: border-box;
+}
+
+.footer{
+    height: 100px;
+}
+
+.display-center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.left, .right{
+    position: absolute;
+    width: 300px;
+    height: 100%;
+    top: calc(200px + .5rem);
+    box-sizing: border-box;
+    background-clip: content-box;
+}
+
+
+.left{
+    left: 0px;
+    background-color: red;
+}
+
+.right{
+    right: 0px;
+    background-color: blue;
+}
+
+.center{
+    margin: 0 300px;
+    background-color: green;
+    height: 100%;
+    box-sizing: border-box;
+}

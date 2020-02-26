@@ -1,0 +1,36 @@
+.box{
+    padding: .5rem;
+    border: 1px solid black;
+    box-shadow: 2px 2px 5px black;
+}
+
+.display-center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header{
+    background-color: aqua;
+    color: white;
+}
+
+.main{
+    display: flex;
+    color: white;
+}
+
+.left{
+    flex: 0 0 200px;
+    background-color: brown;
+}
+
+.center{
+    flex: 1 1 auto;
+    background-color: purple;
+}
+
+.right{
+    flex: 0 0 300px;
+    background-color: orange;
+}

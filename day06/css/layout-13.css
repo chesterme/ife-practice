@@ -1,0 +1,70 @@
+html ,body{
+    margin:0; 
+    padding: 0;
+    height:100%;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+.container{
+    height: 100%;
+}
+
+.box{
+    border: 5px solid black;
+    padding: .5rem;
+    box-shadow: 2px 2px 5px black;
+    color: white;
+}
+
+.display-center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header{
+    background-color: brown;
+    height: 100px;
+}
+
+.footer{
+    background-color: gray;
+    height: 100px;
+}
+
+.main{
+    width: 100%;
+    float: left;
+    height: 100%;
+}
+
+.clearfix::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.center{
+    margin: 0 300px;
+    background-color: red;
+    height: 100%;
+}
+
+.left, .right{
+    width: 300px;
+    height: 100%;
+    float: left;
+}
+
+.left{
+    margin-left: -100%;
+    background-color: green;
+}
+
+.right{
+    margin-left: -300px;
+    background-color: blue;
+}
