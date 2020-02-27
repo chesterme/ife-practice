@@ -1,0 +1,150 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+li{
+    list-style: none;
+}
+
+.display-center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.clearfix::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+
+
+/**/
+
+.header{
+    background: url(../images/bg-2.PNG) repeat;
+    width: 100%;
+    height: 4rem;
+    color: white;
+    position: relative;
+}
+
+.navigation{
+    position: absolute;
+    top: .5rem;
+    right: 5rem;
+}
+
+.navigation li{
+    display: inline-block;
+}
+
+.navigation li:nth-of-type(1n + 2){
+    margin-left: 1rem;
+}
+
+.navigation a{
+    color: white;
+}
+
+.logo{
+    line-height: 4rem;
+    font-size: 2rem;
+    padding-left: 5rem;
+}
+
+
+.message{
+    width: 100%;
+    height: 250px;
+    background: url(../images/bg-3.PNG) repeat;
+    position: relative;
+}
+
+.turn-button{
+    position: absolute;
+    bottom: .5rem;
+    right: 5rem;
+    padding: .5rem;
+    display: flex;
+    /*单行内，决定高度不同的弹性项目在纵向的对齐方式*/
+    align-items: flex-end;
+    height: 2rem;
+}
+
+
+.button{
+    padding: .5rem;
+    border: 1px solid black;
+    background: url(../images/bg-5.PNG) repeat;
+    flex: 1;
+    transition-property: all;
+    transition-delay: .1s;
+}
+
+.button:hover{
+    padding-top: 1rem;
+}
+
+
+.page-navigation{
+    border-bottom: 1px solid #cccccc;
+    height: 3rem;
+    padding: 0.5rem 5rem;
+    position: relative;
+}
+
+.page-navigation ul{
+    position: absolute;
+    bottom: 0;
+}
+
+.page-navigation li{
+    float: left;
+}
+
+.page-navigation li:nth-of-type(1n + 2){
+    border-left: none;
+}
+
+.page-navigation li a{
+    text-decoration: none;
+    color: black;
+    font-size: 1rem;
+}
+
+.button-2{
+    padding: .5rem 1rem;
+    border-radius: 20% 20% 0 0;
+    border: 1px solid black;
+}
+
+.main{
+    padding: .5rem 5rem;
+}
+
+.container{
+    display: flex;
+    margin-bottom: .5rem;
+}
+
+.container div{
+    flex: 1;
+    height: 100px;
+    border: 1px solid black;
+}
+
+.container div:nth-of-type(1n + 2){
+    margin-left: .5rem;
+}
+
+.footer{
+    background: url(../images/bg-4.PNG) repeat;
+    height: 50px;
+}
+
+.footer p{
+    color: white;
+    text-align: center;
+}
