@@ -1,0 +1,108 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+li{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+.box{
+    /* border: 1px solid black; */
+    padding: .5rem;
+}
+
+.header{
+    width: 100%;
+    background: url(../images/7197cae46569a49abd98e0c51348068831be6a85.png) no-repeat center center;
+    background-clip: padding-box;
+    height: 150px;
+    padding: 0 2rem;
+    position: relative;
+}
+
+
+.nav-link{
+    float: left;
+    line-height: 2rem;
+}
+
+.link-item{
+    display: inline-block;
+    font-size: 1rem;
+    line-height: 2rem;
+}
+
+.main-page{
+    background-image: url(../images/page-icon.svg);
+    background-repeat: no-repeat;
+    background-position: left center;
+    padding-left: 2rem;
+}
+
+.left{
+    position: absolute;
+    top: 0rem;
+    padding-top: .5rem;
+    left: 2rem;
+    width: 400px;
+}
+
+.right{
+    position: absolute;
+    top: 0rem;
+    padding-top: .5rem;
+    right: 2rem;
+    width: 400px;
+}
+
+.search-container{
+    width: calc(100% - 800px);
+    margin: 0 420px;
+    display: flex;
+    align-items: center;
+}
+
+.search-container input{
+    flex: 0 0 auto;
+    width: calc(100% - 4rem);
+    height: 2.5rem;
+    font-size: 1.5rem;
+}
+
+.search-button{
+    margin-left: -3.5rem;
+    flex: 0 0 auto;
+    background: url(../images/search.svg) no-repeat center center,
+        url(../images/bg-6.PNG) repeat;
+    height: 2rem;
+    width: 3rem; 
+}
+
+.user-icon{
+    background-image: url(../images/user.svg);
+    background-repeat: no-repeat;
+    background-position: left center;
+}
+
+.user-icon a{
+    padding-left: 2rem;
+}
+
+.submit-button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 2.5rem;
+    padding: .5rem 1rem;
+    border: 1px solid black;
+    background-color: pink;
+    color: white;
+    position: absolute;
+    top: 6px;
+    right: 3.5rem;
+}
