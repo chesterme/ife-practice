@@ -1,0 +1,250 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+a{
+    text-decoration: none;
+}
+
+li{
+    list-style: none;
+}
+
+.header{
+    height: 80px;
+    background: url(../images/bg-7.PNG) repeat;
+    position: relative;
+}
+
+.header a{
+    color: white;
+}
+
+.clearfix{
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.logo{
+    position: absolute;
+    left: 50px;
+    bottom: 0px;
+    width: 50px;
+    height: 50px;
+    background: url(../images/google-2.svg) no-repeat;
+}
+
+.navigation{
+    position: absolute;
+    right: 120px;
+    bottom: 0px;
+    padding-bottom: .5rem;
+}
+
+.navigation li{
+    float: left;
+}
+
+.navigation li:nth-of-type(1n + 2){
+    margin-left: 2rem;
+}
+
+.github-icon{
+    width: 100px;
+    height: 50px;
+    position: absolute;
+    right: 0px;
+    bottom: 0px;
+    background: url(../images/github.svg) no-repeat center center;
+}
+
+.banner{
+    width: 100%;
+    height: 525px;
+    background: url(../images/banner-bg.jpg) no-repeat center center;
+    position: relative;
+}
+
+.article{
+    background: rgba(255, 255, 255, .2);
+    padding: .5rem;
+    width: 360px;
+    color: white;
+    position: absolute;
+    right: 110px;
+    bottom: 0px;
+}
+
+.article h2{
+    margin-right: 0;
+    text-align: end;
+    margin-bottom: .5rem;
+}
+
+.article p{
+    text-indent: 2rem;
+    font-size: 1rem;
+}
+
+.main{
+    padding: 0 100px;
+    display: flex;
+    background: url(../images/bg-8.PNG) repeat;
+    padding-top: .5rem;
+    padding-bottom: 5rem;
+}
+
+.message{
+    flex: 1;
+    padding: .5rem;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+}
+
+.message:nth-of-type(1n + 2){
+    margin-left: .5rem;
+}
+
+.picture{
+    width: 100%;
+    height: 200px;
+    flex: 0 0 auto;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+    margin-bottom: .5rem;
+}
+
+.picture:hover{
+    transform: scale(1.1);
+    transition-duration: .5s , 5s;
+    transition-timing-function: ease-in-out;
+}
+
+.detail{
+    flex: 1 1 auto;
+}
+
+.picture-1{
+    background-image: url(../images/p-1.png);
+}
+
+.picture-2{
+    background-image: url(../images/p-2.png);
+}
+
+.picture-3{
+    background-image: url(../images/p-3.png);
+}
+
+.detail{
+    text-indent: 2rem;
+    padding: .5rem 2rem;
+}
+
+.myself{
+    padding: .5rem 300px 160px 300px;
+}
+
+.display-center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.profile-picture-container{
+    margin-top: -3rem;
+}
+
+.profile-picture{
+    flex: 0 0 auto;
+    width: 160px;
+    height: 160px;
+    background-image: url(../images/profile-picture.jpg);
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: cover;
+    border-radius: 50% 50%;
+}
+
+.about-me{
+    flex: 1 1 auto;
+    margin: 1rem 0;
+}
+
+.about-me h2{
+    line-height: 5rem;
+}
+
+.about-me p{
+    text-indent: 2rem;
+}
+
+.nav-container-1{
+    background-color: black;
+    line-height: 3rem;
+    display: flex;
+    justify-content: center;
+}
+
+.nav-container-1 li{
+    float: left;
+}
+
+.nav-container-1 li:nth-of-type(1n + 2){
+    margin-left: 1rem;
+}
+
+.nav-container-1 a{
+    color: white;
+    font-size: 1rem;
+}
+
+.nav-container-2{
+    padding: 30px 100px 80px 100px;
+    background-color: black;
+    display: flex;
+}
+
+.inner-nav-container{
+    flex: 1;
+}
+
+.inner-nav-container li{
+    line-height: 1.7rem;
+}
+
+.inner-nav-container a{
+    color: white;
+}
+
+.inner-nav-container li:first-of-type{
+    padding-bottom: 2rem;
+}
+
+.inner-nav-container li:nth-of-type(3){
+    text-decoration: underline;
+}
+
+.copyright{
+    padding: .5rem 100px;
+    color: white;
+    background-color: black;
+}
+
+.copyright p{
+    text-align: center;
+    line-height: 1.5rem;
+    font-size: 1rem;
+}
+
+.copyright-icon{
+    background: url(../images/github.svg) no-repeat center center;
+    width: 50px;
+    height: 50px;
+}
+
