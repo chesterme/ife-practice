@@ -1,0 +1,387 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+a{
+    text-decoration: none;
+}
+
+li{
+    list-style: none;
+}
+
+.display-center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.clearfix::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+
+/*页头 start*/
+.header{
+    height: 80px;
+    background: url(../images/bg-7.PNG) repeat;
+    position: relative;
+    padding: .5rem calc((100% - 980px) / 2);
+}
+
+.header a{
+    color: white;
+}
+
+.clearfix{
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.logo{
+    position: absolute;
+    /* left: 50px; */
+    bottom: 0px;
+    width: 50px;
+    height: 50px;
+    background: url(../images/google-2.svg) no-repeat;
+}
+
+.navigation{
+    position: absolute;
+    right: calc(((100% - 980px) / 2) + 100px);
+    bottom: 0px;
+    padding-bottom: .5rem;
+}
+
+.navigation li{
+    float: left;
+}
+
+.navigation li:nth-of-type(1n + 2){
+    margin-left: 2rem;
+}
+
+.github-icon{
+    width: 100px;
+    height: 50px;
+    position: absolute;
+    right: calc((100% - 980px) / 2);
+    bottom: 0px;
+    background: url(../images/github.svg) no-repeat center center;
+}
+/*页头end*/
+
+/*主页内容start*/
+.main{
+    padding: .5rem calc((100% - 980px) / 2);
+    background: url(../images/bg-9.PNG) repeat;
+    display: flex;
+    padding-bottom: 200px;
+}
+
+.left-container{
+    flex: 1 1 auto;
+}
+
+.right-container{
+    flex: 0 0 260px;
+    margin-left: .5rem;
+}
+
+/*左侧内容start*/
+.article-container{
+   padding: .5rem 0;
+}
+
+.article{
+    background-color: white;
+    margin-bottom: .5rem;
+    position: relative;
+    padding: 1rem;
+}
+
+.target-container{
+    width: 50px;
+    /* margin-left: -50px; */
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 10px;
+    left: -50px;
+}
+
+.write-time, .target{
+    flex: 1;
+    padding: .5rem;
+    text-align: center;
+    background-color: #522a5c;
+}
+
+.target{
+    flex: 1;
+    padding: .5rem;
+    background-color: #a660b7;
+}
+
+.detail h2{
+    font-size: 16px;
+    color: #a660b7;
+    margin-bottom: 10px;
+}
+
+.detail h3{
+    font-size: 12px;
+    color: #666666;
+    margin-bottom: 15px;
+}
+
+.detail p{
+    font-size: 10px;
+    text-indent: 20px;
+}
+
+.edit-time{
+    text-align: right;
+    color: #999999;
+    font-size: 12px;
+}
+
+.page-index{
+    padding: .5rem 70px;
+}
+
+.page-index li{
+    flex: 0 0 auto;
+}
+
+.page-index li:nth-of-type(1n + 2){
+    margin-left: .5rem;
+}
+
+.page-index a{
+    display: inline-block;
+    padding: .5rem;
+    background-color: white;
+    color: black;
+}
+
+.page-index a:hover{
+    background-color: #a660b7;
+    color: white;
+}
+
+.page-index a:visited{
+    color: #dddddd;
+}
+
+/*左侧内容end*/
+
+/*右侧内容start*/
+
+.right-container{
+    margin-left: .5rem;
+    padding: .5rem;
+}
+
+.search-container{
+    background-color: white;
+    position: relative;
+    padding: 1rem;
+    margin-bottom: 1rem;
+}
+
+.search{
+    width: 100%;
+    background: url(../images/search.svg) no-repeat .5rem center;
+    line-height: 2rem;
+}
+
+.search-button{
+    display: inline-block;
+    background-color: #dddddd;
+    color: white;
+    width: 3rem;
+    padding: .5rem;
+    position: absolute;
+    top: center;
+    right: 1rem;
+}
+
+.article-sort-container{
+    margin-bottom: 1rem;
+}
+
+.article-sort-container a{
+    background-color: white;
+    display: block;
+    color: #666666;
+    font-size: 1.2rem;
+    padding: 1rem;
+    border-left: 5px solid #dfc6e6;
+}
+
+.article-sort-container a:nth-of-type(1n + 2){
+    margin-top: .5rem;
+}
+
+
+.article-sort-container a:hover{
+    border-left: 5px solid #522a5c;
+}
+
+.calender-container{
+    background-color: white;
+    padding: .5rem 2rem;
+    margin-bottom: 1rem;
+}
+
+.calender-title{
+    color: #773c88;
+    display: flex;
+}
+
+.yesterday, .nextday{
+    width: 10px;
+    height: auto;
+    padding: .5rem;
+    flex: 0 0 auto;
+}
+
+.today{
+    flex: 1 1 auto;
+}
+
+.calender{
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+}
+
+.grid-item{
+    border-bottom: 1px solid #eeeeee;
+    text-align: center;
+}
+
+
+.grid-item:hover{
+    background-color: #773c88;
+    color: white;
+}
+
+.tags-container{
+    background-color: white;
+    padding: .5rem;
+}
+
+.tags-title{
+    color: #666666;
+    font-size: 1.5rem;
+    line-height: 2rem;
+    margin-bottom: 1rem;
+}
+
+.tags-detail{
+    display: flex;
+    flex-flow: wrap;
+}
+
+.tags-detail div{
+    /* float: left; */
+    flex: 0 0 auto;
+    color: #773c88;
+}
+
+.emphasize-tag{
+    font-size: 2rem;
+}
+
+.normal-tag{
+    font-size: 1rem;
+}
+
+.small-tag{
+    font-size: .5rem;
+}
+
+/*右侧内容end*/
+
+
+/*主页内容end*/
+
+/*页尾start*/
+
+.footer{
+    background-color: black;
+    padding: .5rem calc((100% - 980px) / 2);
+}
+
+.nav-container-1{
+    background-color: black;
+    line-height: 3rem;
+    display: flex;
+    justify-content: center;
+    border-bottom: .5px solid white;
+}
+
+.nav-container-1 li{
+    float: left;
+}
+
+.nav-container-1 li:nth-of-type(1n + 2){
+    margin-left: 1rem;
+}
+
+.nav-container-1 a{
+    color: white;
+    font-size: 1rem;
+}
+
+.nav-container-2{
+    padding: 30px 0px 80px 0px;
+    background-color: black;
+    display: flex;
+}
+
+.inner-nav-container{
+    flex: 1;
+}
+
+.inner-nav-container li{
+    line-height: 1.7rem;
+}
+
+.inner-nav-container a{
+    color: white;
+}
+
+.inner-nav-container li:first-of-type{
+    padding-bottom: 2rem;
+}
+
+.inner-nav-container li:nth-of-type(3){
+    text-decoration: underline;
+}
+
+.copyright{
+    padding: .5rem 100px;
+    color: white;
+    background-color: black;
+}
+
+.copyright p{
+    text-align: center;
+    line-height: 1.5rem;
+    font-size: 1rem;
+}
+
+.copyright-icon{
+    background: url(../images/github.svg) no-repeat center center;
+    width: 50px;
+    height: 50px;
+}
+/*页尾end*/
